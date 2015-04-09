@@ -1,0 +1,26 @@
+<section data-ng-controller="BlogsController" data-ng-init="findOne()">
+
+    <!-- Header -->
+    <div class="page-header" >
+        <h1 data-ng-bind="blog.name"></h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Parte derecha -->
+            <div class="col-md-9">
+                <div data-ng-include="'/modules/blogs/views/cuerpo.client.view.html'" class="jumbotron"></div>
+            </div>
+            <div class="col-md-3">
+                <div data-ng-include="'/modules/blogs/views/blog-sidebar.client.view.html'" class="sidebar-nav-fixed pull-right"></div>
+            </div>
+            <!-- Contenido -->
+
+            <!-- Pie -->
+
+        </div>
+        <!-- fin de row -->
+    </div>
+    <!-- fin de container -->
+</section>
